@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Irazu Serrano">
+    <meta name="description" content="Portafolio de desarrollo web de Irazu Serrano">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Irazu Serrano | Desarrollo Web Front-End</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar__logo" href="#">
+            <img src="imagenes/icono.png" width="80" alt="Logo de la página web">
+          </a>
+        
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <button class="navbar-toggler" aria-label="Toggle navigation">
+              <!-- Aquí se coloca el SVG del ícono del menú -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+              </svg>
+            </button>
+            <li class="nav__item">
+              <a class="nav__link "  href="#hero">INICIO</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link " aria-current="page" href="#sobre-mi">SOBRE MÍ</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#proyectos">PROYECTOS</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#habilidades">HABILIDADES</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#blogd">BLOG</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#testimonios">EXPERIENCIA</a>
+            </li>
+            <li class="nav__item ppt">
+              <a class="nav__link" href="#contacto">CONTACTANOS</a>
+            </li>
+            <li class="nav__item ppt">
+              <a href="https://wa.me/966267857" class="button">CONTRÁTAME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section id="hero" class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/YO.jpg" alt="Foto de Irazu Serrano">
+        <h1>Hola, soy Rodrigo Espinoza Sayago</h1>
+        <!--<h2>Soy estudiante de física-matemáticas y principiante en el desarrollo web. / Bienvenodas y bienvenidos a mi portafolio web. </h2>-->
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+        <div class="button-container">
+          <a href="#" class="BUTTONINICIO">VER CV</a>
+          <a href="#" class="BUTTONINICIO">PROYECTOS</a>
+        </div>
+        
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedorimagen">
+        <img class="fotomio" src="foto_bolivia.jpeg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Sobre mí:</h2>
+        <p class="seccion-texto">Hola! mi nombre es Rodrigo Espinoza Sayago, Soy un 
+          desarrollador web, programador y diseñador UI apasionado 
+          por crear soluciones digitales excepcionales. Mi objetivo es 
+          proporcionar experiencias intuitivas y atractivas a través 
+          de la combinación de diseño estético y una funcionalidad 
+          impecable.</p>
+      </div>
+          <div class="infosobremi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <p>:espinozasayagorodrigo@gmail.com</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <p>:966267857</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <p>:RodrigoPro.ccontrolz.com</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="43" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>:Perú</p>
+          </div>
+      
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto1.png" alt="Proyecto 1: Clonación de Google">
+              <div class="overlay">
+                <p>Proyecto 1: portafolio-web</p>
+                <div class="iconos-contenedor">
+                  <a href="https://irazu-sg13.github.io/Google_Clon/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/RodrigoEspinozaSa/portafolio-web.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2: Web Page - Chankalo</p>
+                <div class="iconos-contenedor">
+                  <a href="https://irazu-sg13.github.io/PaginaTrastornosMentales/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/RodrigoEspinozaSa/chankalo.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3: snake JavaScript</p>
+                <div class="iconos-contenedor">
+                  <a href="https://irazu-sg13.github.io/TypewriterJS/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/RodrigoEspinozaSa/snake-java.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4: chat java-netbeans</p>
+                <div class="iconos-contenedor">
+                  <a href="https://irazu-sg13.github.io/Portafolio/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/RodrigoEspinozaSa/Chat-java-netbeans.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5: desarrolloweb1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://irazu-sg13.github.io/MiPrimeraPaginaWeb/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://github.com/RodrigoEspinozaSa/DESARROLLOWEB1.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6 : mi primera pagina</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/RodrigoEspinozaSa/desarroloweb.git" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/RodrigoEspinozaSa" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-success custom-btn">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+        <!-- habilidades -->
+        <section id="habilidades" class="habilidades-recientes seccion-clara d-flex flex-column">
+          <h2 class="seccion-titulo texto-negro">Mis Habilidades </h2>
+          <!-- Galeria de Proyectos -->
+          <div class="container text-center proyectos-contenedor">
+            <div class="row">
+              <!-- Proyecto 1 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto1.png" alt="Proyecto 1: Clonación de Google">
+                  <div class="overlay">
+                    <p>Proyecto 1: portafolio-web</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/Google_Clon/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/portafolio-web.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 2: Web Page - Chankalo</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/PaginaTrastornosMentales/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/chankalo.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 3 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 3: snake JavaScript</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/TypewriterJS/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/snake-java.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 4 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 4: chat java-netbeans</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/Portafolio/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/Chat-java-netbeans.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 5 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto5.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 5: desarrolloweb1</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/MiPrimeraPaginaWeb/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/DESARROLLOWEB1.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 6 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto6.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 6 : mi primera pagina</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://github.com/RodrigoEspinozaSa/desarroloweb.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 7 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto2.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 2: Web Page - Chankalo</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/PaginaTrastornosMentales/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/chankalo.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 8 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto3.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 3: snake JavaScript</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/TypewriterJS/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/snake-java.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Proyecto 9 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="proyecto">
+                  <img src="imagenes/proyecto4.png" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>Proyecto 4: chat java-netbeans</p>
+                    <div class="iconos-contenedor">
+                      <a href="https://irazu-sg13.github.io/Portafolio/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://github.com/RodrigoEspinozaSa/Chat-java-netbeans.git" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+    
+        <!--blog-->
+        <section id="blogd" class="mi-blog seccion-oscura">
+          <div class="infosobremi">
+            <h2 class="seccion-titulo miblog">Mi Blog</h2>
+          </div>
+          <div class="contenedorimagenblog">
+            <img class="fotoblog" src="foto_bolivia.jpeg" alt="">
+          </div>
+          <div class="contenedor">
+            <h2 class="seccion-titulo">Sobre mí:</h2>
+            <p class="seccion-texto">Hola! mi nombre es Rodrigo Espinoza Sayago, Soy un 
+              desarrollador web, programador y diseñador UI apasionado 
+              por crear soluciones digitales excepcionales. Mi objetivo es 
+              proporcionar experiencias intuitivas y atractivas a través 
+              de la combinación de diseño estético y una funcionalidad 
+              impecable.</p>
+          </div>
+          <div class="contenedorimagenblog">
+            <img class="fotoblog" src="foto_bolivia.jpeg" alt="">
+          </div>
+          <div class="contenedor">
+            <h2 class="seccion-titulo">Sobre mí:</h2>
+            <p class="seccion-texto">Hola! mi nombre es Rodrigo Espinoza Sayago, Soy un 
+              desarrollador web, programador y diseñador UI apasionado 
+              por crear soluciones digitales excepcionales. Mi objetivo es 
+              proporcionar experiencias intuitivas y atractivas a través 
+              de la combinación de diseño estético y una funcionalidad 
+              impecable.</p>
+          </div>
+          <div class="contenedorimagenblog">
+            <img class="fotoblog" src="foto_bolivia.jpeg" alt="">
+          </div>
+          <div class="contenedor">
+            <h2 class="seccion-titulo">Sobre mí:</h2>
+            <p class="seccion-texto">Hola! mi nombre es Rodrigo Espinoza Sayago, Soy un 
+              desarrollador web, programador y diseñador UI apasionado 
+              por crear soluciones digitales excepcionales. Mi objetivo es 
+              proporcionar experiencias intuitivas y atractivas a través 
+              de la combinación de diseño estético y una funcionalidad 
+              impecable.</p>
+          </div>
+
+
+        </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo">Testimonios y Referencias</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de las personas con las que he trabajado:</h3>
+      
+      <!-- Carrusel -->
+      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente1.jpeg" alt="Foto de Eytan">
+              <p class="testimonio-texto">Rodrigo es una persona organizada, proactiva y comprometida. Es muy cómodo trabajar con ella, ya que su comunicación es asertiva y clara. </p>
+              <div class="testimonio-info">
+                <p class="cliente">Eytan</p>
+                <p class="cargo">Colega de trabajo y de estudios</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente2.jpeg" alt="Foto de Gwen">
+              <p class="testimonio-texto">Los cursos que realiza Rodrigo, son claros, interesantes y ella tiene la paciencia necesaria para explicar claramente las actividades y los temas.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Gwen</p>
+                <p class="cargo">Alumna analicis computacional</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="imagenes/cliente3.jpeg" alt="Foto de Eugenia">
+              <p class="testimonio-texto">Agradecer por su paciencia y por todas las herramientas que nos brindo, pptx grabaciones, opciones de conseguir materiales. Es muy profesional y busca los recursos para que quede todo claro en las clases virtuales.</p>
+              <div class="testimonio-info">
+                <p class="cliente">Eugenia</p>
+                <p class="cargo">Alumna del curso-taller de introducción a LaTeX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+        
+      </div>
+      
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Principiante en el desarrollo web como Front-End (diseño de un sitio web, desde la estructura del sitio hasta los estilos como colores, fondos, tamaños hasta llegar a las animaciones y efectos). Entre los proyectos más relevantes está la Clonación de Google, mi portafolio web y página web de trastornos mentales, usando HTML, CSS y JS. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML5</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">Bootstrap</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Cursos y Mentorías</p>
+            <p> Como mentora académica apoyo en el proceso enseñanza-aprendizaje de alumnos de nivel media superior y superior en temas de física y matemáticas. Doy cursos de técnicas antiguas de fotografía y del editor de textos LaTeX. </p>
+            <div class="badges-contenedor">
+              <span class="badge bg-info text-dark">Enseñanza</span>
+              <span class="badge bg-info text-dark">Cursos</span>
+              <span class="badge bg-info text-dark">Talleres</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Formación Académica</p>
+            <p>A lo largo de mi formación académica he aprendido a usar el sistema operativo Linux, el editor de textos LaTeX, lenguajes de programación como Phyton, MatLab, C++ y Mathematica. Con el programa de TecnolochicasPRO aprendí a realizar desarrollo web como Front-End. </p>
+            <div class="badges-contenedor">
+              <span class="badge bg-warning text-dark">TecnolochicasPRO</span>
+              <span class="badge bg-warning text-dark">Desarrollo Web</span>
+              <span class="badge bg-warning text-dark">Python / C++ / MatLab</span>
+              <span class="badge bg-warning text-dark">LaTeX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Contáctame!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Puedes contactarme para comenzar tu proyecto de desarrollo web y en conjunto lograremos que tus ideas se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="e-mail: jani.serrano303@gmail.com">
+                <button type="button">  
+                  e-mail
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Es la capacidad de resistir a los errores lo que a menudo conduce a un mayor éxito.<br> - J. K. Rowlling - </p>
+      <p class="footer-texto text-center"> ¡Creemos un proyecto en conjunto! </p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/rodrigoespinoza" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://github.com/RodrigoEspinozaSa" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="www.linkedin.com/in/rodeigo-espinoza-b88874106" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://instagram.com/rodrigoespinoza" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="e-mail: espinozasayagorodrigo@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Rodrigo Espinoza (2024) &#169;</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="main.js"></script>
+
+  </body>
+</html>
