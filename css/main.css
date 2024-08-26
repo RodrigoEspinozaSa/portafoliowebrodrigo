@@ -120,7 +120,7 @@ h1 {
 
 /* Seccion Hero */
 .hero {
-  background-image: url("/imagenes/v1016-b-09.jpg");
+  background-image: url("https://github.com/RodrigoEspinozaSa/dataimages/blob/main/v1016-b-09.jpg?raw=true");
   min-height: 450px;
   text-align: center;
   background-size: cover;
